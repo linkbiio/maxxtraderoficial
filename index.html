@@ -10,33 +10,42 @@
       margin: 0;
       padding: 0;
       font-family: 'Montserrat', sans-serif;
-      background-color: #0e1a2b; /* Azul escuro */
+      background: linear-gradient(to bottom, #0e1a2b, #2a2f38); /* Gradiente azul escuro → cinza escuro */
       color: #f0f0f0;
       text-align: center;
+    }
+
+    .banner {
+      background-color: rgba(255, 255, 255, 0.03);
+      padding: 40px 20px 30px;
+      border-bottom: 2px solid #444;
+    }
+
+    .banner h1 {
+      font-size: 3.2rem;
+      color: #cfd3d6;
+      margin: 0;
+      letter-spacing: 1px;
     }
 
     .container {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 60px 20px;
-    }
-
-    .titulo {
-      font-size: 3.2rem;
-      margin-bottom: 50px;
-      color: #cfd3d6; /* Cinza claro */
-      letter-spacing: 1px;
+      padding: 40px 20px 60px;
     }
 
     .botoes a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
       width: 100%;
       max-width: 800px;
-      margin: 30px auto;
-      padding: 28px;
-      font-size: 1.6rem;
-      color: #0e1a2b; /* Azul escuro no texto */
-      background-color: #cfd3d6; /* Cinza claro */
+      margin: 25px auto;
+      padding: 26px 30px;
+      font-size: 1.5rem;
+      color: #0e1a2b;
+      background-color: #cfd3d6;
       border-radius: 20px;
       text-decoration: none;
       font-weight: bold;
@@ -48,18 +57,49 @@
       background-color: #dde1e4;
       transform: scale(1.02);
     }
+
+    .icone {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 600px) {
+      .banner h1 {
+        font-size: 2.4rem;
+      }
+
+      .botoes a {
+        font-size: 1.2rem;
+        padding: 20px;
+      }
+
+      .icone {
+        font-size: 1.4rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="titulo">Maxx Trader</h1>
 
+  <div class="banner">
+    <h1>🔥 Maxx Trader</h1>
+  </div>
+
+  <div class="container">
     <div class="botoes">
-      <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" target="_blank">🔗 Corretora Parceira</a>
-      <a href="https://wa.me/553499246782?text=Ol%C3%A1%2C+vim+pelo+seu+link+da+bio%21" target="_blank">📲 Fale comigo no WhatsApp</a>
-      <a href="https://t.me/maxxtraderoficial" target="_blank">📡 Sala de Sinais</a>
-      <a href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" target="_blank">🎥 Sala Vip Live</a>
+      <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" target="_blank">
+        <span class="icone">💼</span> Corretora Parceira (Obynex)
+      </a>
+      <a href="https://wa.me/553499246782?text=Ol%C3%A1%2C+vim+pelo+seu+link+da+bio%21" target="_blank">
+        <span class="icone">📲</span> Fale comigo no WhatsApp
+      </a>
+      <a href="https://t.me/maxxtraderoficial" target="_blank">
+        <span class="icone">📡</span> Sala de Sinais no Telegram
+      </a>
+      <a href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" target="_blank">
+        <span class="icone">🎥</span> Sala da Live (WhatsApp)
+      </a>
     </div>
   </div>
+
 </body>
 </html>
