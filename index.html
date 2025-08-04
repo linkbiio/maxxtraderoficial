@@ -2,81 +2,119 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maxx Trader - Link da Bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1614284578571-cfba3e7d5c8c?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://i.imgur.com/0f7dUOJ.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: #f0f0f0;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Overlay escuro por cima do fundo para legibilidade */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(14, 26, 43, 0.85); /* fundo azul escuro transparente */
+      z-index: 0;
+    }
+
+    .banner, .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .banner {
+      padding: 40px 20px 30px;
+      border-bottom: 2px solid #444;
+    }
+
+    .banner h1 {
+      font-size: 3.2rem;
+      color: #cfd3d6;
+      margin: 0;
+      letter-spacing: 1px;
     }
 
     .container {
-      backdrop-filter: blur(6px);
-      background-color: rgba(10, 18, 30, 0.7);
-      min-height: 100vh;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .botoes a {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-      color: #dbe9ff;
-      text-shadow: 1px 1px 4px #000;
-    }
-
-    .botao {
-      display: block;
-      width: 90%;
-      max-width: 400px;
-      padding: 18px;
-      margin: 15px auto;
-      background: linear-gradient(135deg, #1f2e4d, #334766);
-      color: #fff;
-      text-align: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 800px;
+      margin: 25px auto;
+      padding: 26px 30px;
+      font-size: 1.5rem;
+      color: #0e1a2b;
+      background-color: #cfd3d6;
+      border-radius: 20px;
       text-decoration: none;
-      border-radius: 12px;
-      font-size: 1.2rem;
       font-weight: bold;
-      position: relative;
-      overflow: hidden;
-      animation: pulse 2s infinite;
-      box-shadow: 0 0 10px #0a0a0a88;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      box-sizing: border-box;
     }
 
-    .botao:hover {
-      background: #425a78;
-      transition: 0.3s ease-in-out;
+    .botoes a:hover {
+      background-color: #dde1e4;
+      transform: scale(1.02);
     }
 
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 rgba(150, 200, 255, 0.4);
+    .icone {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 600px) {
+      .banner h1 {
+        font-size: 2.4rem;
       }
-      70% {
-        box-shadow: 0 0 0 15px rgba(150, 200, 255, 0);
+
+      .botoes a {
+        font-size: 1.2rem;
+        padding: 20px;
       }
-      100% {
-        box-shadow: 0 0 0 0 rgba(150, 200, 255, 0);
+
+      .icone {
+        font-size: 1.4rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>MAXX TRADER</h1>
 
-    <a class="botao" href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" target="_blank">🌐 Corretora Oficial</a>
-    <a class="botao" href="https://api.whatsapp.com/send?phone=553499246782" target="_blank">📲 Fale no WhatsApp</a>
-    <a class="botao" href="https://t.me/maxxtraderoficial" target="_blank">📡 Sala de Sinais</a>
-    <a class="botao" href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" target="_blank">🎥 Sala da Live</a>
+  <div class="banner">
+    <h1>🔥 Maxx Trader</h1>
   </div>
+
+  <div class="container">
+    <div class="botoes">
+      <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" target="_blank">
+        <span class="icone">💼</span> Corretora Parceira (Obynex)
+      </a>
+      <a href="https://wa.me/553499246782?text=Ol%C3%A1%2C+vim+pelo+seu+link+da+bio%21" target="_blank">
+        <span class="icone">📲</span> Fale comigo no WhatsApp
+      </a>
+      <a href="https://t.me/maxxtraderoficial" target="_blank">
+        <span class="icone">📡</span> Sala de Sinais no Telegram
+      </a>
+      <a href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" target="_blank">
+        <span class="icone">🎥</span> Sala da Live (WhatsApp)
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
