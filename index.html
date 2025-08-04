@@ -16,50 +16,37 @@
     }
 
     .container {
-      max-width: 700px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 60px 20px;
     }
 
     .titulo {
-      font-size: 3rem;
+      font-size: 3.2rem;
       margin-bottom: 50px;
-      color: #cfd3d6;
+      color: #cfd3d6; /* Cinza claro */
       letter-spacing: 1px;
     }
 
     .botoes a {
       display: block;
       width: 100%;
-      max-width: 600px;
-      margin: 25px auto;
-      padding: 25px;
-      font-size: 1.4rem;
-      color: #0e1a2b;
-      background-color: #cfd3d6;
-      border-radius: 15px;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 28px;
+      font-size: 1.6rem;
+      color: #0e1a2b; /* Azul escuro no texto */
+      background-color: #cfd3d6; /* Cinza claro */
+      border-radius: 20px;
       text-decoration: none;
       font-weight: bold;
-      position: relative;
-      animation: pulse 2s infinite;
       transition: transform 0.3s ease, background-color 0.3s ease;
+      box-sizing: border-box;
     }
 
     .botoes a:hover {
       background-color: #dde1e4;
-      transform: scale(1.03);
-    }
-
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 rgba(207, 211, 214, 0.6);
-      }
-      70% {
-        box-shadow: 0 0 0 25px rgba(207, 211, 214, 0);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(207, 211, 214, 0);
-      }
+      transform: scale(1.02);
     }
   </style>
 </head>
