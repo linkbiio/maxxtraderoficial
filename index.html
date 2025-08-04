@@ -10,13 +10,28 @@
       margin: 0;
       padding: 0;
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(to bottom, #0e1a2b, #2a2f38); /* Gradiente azul escuro → cinza escuro */
+      background: url('https://i.imgur.com/0f7dUOJ.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #f0f0f0;
       text-align: center;
+      position: relative;
+    }
+
+    /* Overlay escuro por cima do fundo para legibilidade */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(14, 26, 43, 0.85); /* fundo azul escuro transparente */
+      z-index: 0;
+    }
+
+    .banner, .container {
+      position: relative;
+      z-index: 1;
     }
 
     .banner {
-      background-color: rgba(255, 255, 255, 0.03);
       padding: 40px 20px 30px;
       border-bottom: 2px solid #444;
     }
