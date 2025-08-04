@@ -1,259 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link rel="icon" type="image/png" href="imagens/logo.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Link da Bio</title>
-  <meta name="description" content="Acesse todos os meus links aqui.">
-  <meta property="og:image" content="imagens/minhafoto.png">
-  <meta property="og:title" content="Thurzin Trader | Trader Profissional">
-
+  <title>Maxx Trader - Link da Bio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <style>
-    /* Fundo preto sólido */
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000000; /* fundo preto sólido */
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
       color: #fff;
       text-align: center;
     }
 
-    .faixa-carrossel {
-      width: 100%;
-      overflow: hidden;
-      background-color: #000000; /* preto sólido */
-      height: 60px;
-      border-top: 2px solid #222; /* bordas um pouco mais escuras */
-      border-bottom: 2px solid #222;
-    }
-
-    .carrossel-conteudo {
-      display: flex;
-      align-items: center;
-      animation: scrollCarrossel 20s linear infinite;
-    }
-
-    .carrossel-conteudo img {
-      height: 40px;
-      margin: 0 30px;
-      opacity: 0.9;
-      transition: transform 0.3s;
-    }
-
-    .carrossel-conteudo img:hover {
-      transform: scale(1.1);
-      opacity: 1;
-    }
-
-    @keyframes scrollCarrossel {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
     .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
 
-    .foto-container {
-      position: relative;
-      width: 100vw;
-      height: 500px;
-      margin: 0 auto 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      flex-direction: column; /* para alinhar a imagem e o texto verticalmente */
+    .titulo {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #FFD700;
+      letter-spacing: 1px;
     }
 
-    .imagem-destaque {
-      max-width: 80%;
-      max-height: 80%;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-
-    .imagem-destaque:hover {
-      transform: scale(1.05);
-    }
-
-    /* Texto abaixo da imagem */
-    .texto-embaixo {
-      color: #fff;
-      margin-top: 15px;
-      font-size: 1.2rem;
-    }
-
-    .botoes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .botao-imagem {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 30px;
-      overflow: hidden;
-      border: 2px solid #444;
-      box-shadow: 0 0 15px #ffffff22;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 0.8s ease-out forwards, pulse 2.5s infinite ease-in-out;
-    }
-
-    .botao-imagem img {
-      width: 100%;
-      height: auto;
+    .botoes a {
       display: block;
+      background-color: #1a1a1a;
+      color: #FFD700;
+      text-decoration: none;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 15px 0;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
     }
 
-    .botao-imagem:hover {
+    .botoes a:hover {
+      background-color: #FFD700;
+      color: #000;
       transform: scale(1.05);
-      box-shadow: 0 0 25px #ffffff88;
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.02); }
-    }
-
-    @media (min-width: 768px) {
-      .botao-imagem {
-        width: 48%;
-      }
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 0.85rem;
-      color: #aaa;
-      background-color: #000;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    footer img {
-      height: 40px;
+    .imagem-perfil {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #FFD700;
+      box-shadow: 0 0 20px #FFD70066;
     }
   </style>
 </head>
 <body>
-
-  <!-- Carrossel -->
-  <div class="faixa-carrossel">
-    <div class="carrossel-conteudo">
-      <!-- Repita quantas imagens quiser -->
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      
-      <!-- ... -->
-      <!-- Copie mais logos se quiser repetir o efeito contínuo -->
-    </div>
-  </div>
-
- 
-
-  <!-- Botões -->
-  <div class="container" id="botoes">
-    <div class="botoes">
-      <a href="https://trade.obynexbroker.com/register?aff=757282" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
-        <img src="imagens/botao-corretora.png" alt="Corretora" />
-      </a>
-    <a href="https://api.whatsapp.com/send?phone=5522997301385&text=Quero+saber+mais%21" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
-  <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
-</a>
-      
- <!-- Botão Grupo de Lives no WhatsApp -->
-<a href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" class="botao-imagem" style="animation-delay: 2.8s;" target="_blank">
-  <img src="imagens/botao-grupo.png" alt="Grupo das Lives no WhatsApp" />
-</a>
-      
-      </a>
-      <a href="https://www.youtube.com/channel/UCgBj1Oea0IRNhSaYKIQ0w1g" class="botao-imagem" style="animation-delay: 2.2s;" target="_blank">
-        <img src="imagens/botao-youtube.png" alt="YouTube" />
-      </a>
-      <a href="https://www.instagram.com/thurzintrader?igsh=dzNhNzZ3d3djd2Q0&utm_source=qr" class="botao-imagem" style="animation-delay: 2.4s;" target="_blank">
-  <img src="imagens/botao-instagram.png" alt="Instagram" />
-</a>
-      
-<!-- Botão TikTok -->
-    <a href="https://www.tiktok.com/@thurzintrader" class="botao-imagem" style="animation-delay: 2.6s;" target="_blank">
-      <img src="imagens/botao-tiktok.png" alt="TikTok" />
-    </a>
-
-      <!-- Botão Mentoria -->
-<a href="https://wa.me/5522997301385?text=Quero+fazer+sua+mentoria%21" class="botao-imagem" style="animation-delay: 2.9s;" target="_blank">
-  <img src="imagens/botao-mentoria.png" alt="Mentoria 1x1" />
-</a>
-
-<!-- Botão Desafio -->
-<a href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" class="botao-imagem" style="animation-delay: 3.1s;" target="_blank">
-  <img src="imagens/botao-desafio.png" alt="Desafio 7 Dias" />
-</a>
-
+  <div class="container">
+    <img src="https://via.placeholder.com/140" alt="Foto Maxx Trader" class="imagem-perfil" />
+    <h1 class="titulo">Maxx Trader</h1>
     
-      
+    <div class="botoes">
+      <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" target="_blank">🔗 Corretora Parceira (Obynex)</a>
+      <a href="https://wa.me/553499246782?text=Ol%C3%A1%2C+vim+pelo+seu+link+da+bio%21" target="_blank">📲 Fale comigo no WhatsApp</a>
+      <a href="https://t.me/maxxtraderoficial" target="_blank">📡 Sala de Sinais Telegram</a>
     </div>
   </div>
-
-  <!-- Rodapé -->
-  <footer>
-    <img src="imagens/logo.png" alt="Logo Thurzin Trader">
-    <span>© 2025 Thurzin Trader - Todos os direitos reservados.</span>
-  </footer>
-
 </body>
 </html>
